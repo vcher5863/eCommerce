@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>
+            Unknown Hype
+        </title>
+        <style>
+            img{
+                width:400px;
+            }
+            input{
+                widows: 10px;
+            }
+            body{
+                background-color :red
+            }
+        </style>
+        <script>
+            function bill(){
+                
+    var subtotal = document.getElementById("subtotal");
+    var shipping =document.getElementById("shipping");
+    var Quantity = document.getElementById("quantity");
+    var output =document.getElementById("output");
+
+
+    var tax = parseFloat (subtotal.value) * 0.0875;
+    var quantity = parseFloat(quantity.value) 
+    var total = parseFloat (subtotal.value) + parseFloat (shipping.value) +(Quantity.value) + tax;
+    build += "Quantity: " + quantity.value + "<br>"
+    build += "Subtotal: " + subtotal.value + "<br>"
+    build += "Shipping: " +shipping.value + "<br>"
+    build += "Tax: " + tax.toFixed(2) + "<br>"
+    build += "---------------<br>"; 
+    build += "Total: " + total; 
+
+    output.innerHTML = build;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>
+                Supreme/PlayBoy Varsity Jacket
+            </h1>
+            <img src="Product 1.png"><br>
+            <span>
+                $248
+            </span>
+            <p>
+                24 oz. melton wool with satin lining<br>
+                Snap front closure with leather.<br>
+                Applique on chest and piping on sleeves and pockets.<br>
+            </p>
+            Quantity: <input type="text" id="Quantity1">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br>
+            <button onclick>
+                Add To Cart
+            </button>
+        </div>
+        <div>
+            <h2>
+                2-Tone Hooded Sideline Jacket
+            </h2>
+            <img src="Product 2.png"><br>
+            <span>
+                $350
+            </span>
+            <p>
+				RipStop nylon with full zip closure & hand pockets at lower front.<br>
+				Printed logo on chest and tackle twill logo on back.<br>
+            </p>
+            Quantity: <input type="text" id="Quantity2">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br>
+            <button onclick>
+                Add To Cart
+            </button>                       
+        </div>
+        <div>
+            <h3>
+                Supreme Nasty Nas Tee
+            </h3>
+            <img src="Product 3.png"><br>
+            <span>
+                $54
+            </span>
+            <p>
+				All cotton classic supreme t-shirt.<br>
+				Printed photo of the famous rapper Nas.<br>
+            </p>
+            Quantity: <input type="text" id="Quantity3">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br>
+            <button onclick>
+                Add To Cart
+            </button>
+        </div>
+        <div>
+            <h4>
+                Supreme Reflective Headband
+            </h4>
+            <img src="Product 4.png"><br>
+            <span>
+                $34
+            </span>
+            <p>
+				New Era Reflective Logo Headband.<br>
+				*USE FLASH FOR THE LOGO TO REFLECT*<br>
+            </p>
+            Quantity: <input type="text" id="Quantity4">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br>
+            <button onclick>
+                Add To Cart
+            </button>
+        </div>
+        <div>
+            <h6>
+                Supreme Baseball Jersey
+            </h6>
+            <img src="Product 6.png"><br>
+            <span>
+                $110
+            </span>
+            <p>
+                Comeplete Comfortable Jersey<br>
+                Pull Over Not Button Up.
+            </p>
+            Quantity: <input type="text" id="Quantity6">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br>
+            <button onclick>
+                Add To Cart
+            </button>
+        </div>
+        <div>
+            <h7>
+                Supreme/PlayBoy Hoodie
+            </h7>
+            <img src="Product 7.png"><br>
+            <span>
+                $148
+            </span>
+            <p>
+                Cotton crossgrain fleece with embroidery<br>
+            </p>
+            Quantity: <input type="text" id="Quantity7">
+            <input id="subtotal" type="text" placeholder="Enter Subtotal"><br>
+            <input id="shipping" type="text"placeholder="Shipping Price"><br> 
+            <button onclick>
+                Add To Cart
+            </button>
+        </div>
+    </body>
+</html>
